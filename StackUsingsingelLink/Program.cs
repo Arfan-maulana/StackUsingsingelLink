@@ -84,7 +84,15 @@ namespace StackUsingsingelLink
                 Console.WriteLine("\nEnter your choice");
                 string input = Console.ReadLine();
                 char ch = Convert.ToChar(input == "" ? "0" : input);
+                switch(ch)
+                {
+                    case '1':
+                        Console.WriteLine("\nEnter a number : ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
 
+                }
             }
         }
     }
