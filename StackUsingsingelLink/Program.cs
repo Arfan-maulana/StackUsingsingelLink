@@ -42,6 +42,13 @@ namespace StackUsingsingelLink
             Console.WriteLine("\n" + element + "pushed");
         }
 
+        public void pop()
+        {
+            Console.WriteLine("\nThe poped element is :" + top.info);
+            top = top.next; // make top point to the next node is squence
+        }
+
+
 
         }
 
