@@ -8,6 +8,7 @@ namespace StackUsingsingelLink
 {
     class node
     {
+
         public int info;
         public node next;
         public node(int i, node n)
@@ -15,14 +16,25 @@ namespace StackUsingsingelLink
             info = i;
             next = n;
         }
-
+    }
         class Stack
         {
             node top;
             public Stack()
             {
-                top = null
+                top = null;
             }
+            bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+
+        }
+
+
+
         }
 
 
@@ -40,7 +52,8 @@ namespace StackUsingsingelLink
 
 
 
-
+    class program
+        {
         static void Main(string[] args)
         {
         }
