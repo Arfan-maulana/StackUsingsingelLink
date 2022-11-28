@@ -61,12 +61,8 @@ namespace StackUsingsingelLink
                     Console.WriteLine(top.info);
                 }
             }
-
-
-
         }
-
-        }
+    }
 
     class program
         {
@@ -82,7 +78,7 @@ namespace StackUsingsingelLink
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. exit");
                 Console.WriteLine("\nEnter your choice");
-                string input = Console.ReadLine();
+                string input = Console.ReadLine();1`
                 char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch(ch)
                 {
@@ -91,7 +87,14 @@ namespace StackUsingsingelLink
                         int num = Convert.ToInt32(Console.ReadLine());
                         s.push(num);
                         break;
-
+                    case '2':
+                        if(s.empty())
+                        {
+                            Console.WriteLine("\nStack empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
                 }
             }
         }
