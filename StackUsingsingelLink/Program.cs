@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -71,7 +72,20 @@ namespace StackUsingsingelLink
         {
         static void Main(string[] args)
         {
-            
+            Stack s = new Stack();
+            while(true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("***Stack Menu***\n");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. pop ");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. exit");
+                Console.WriteLine("\nEnter your choice");
+                string input = Console.ReadLine();
+                char ch = Convert.ToChar(input == "" ? "0" : input);
+
+            }
         }
     }
 }
