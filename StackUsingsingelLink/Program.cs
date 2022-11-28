@@ -78,7 +78,7 @@ namespace StackUsingsingelLink
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. exit");
                 Console.WriteLine("\nEnter your choice");
-                string input = Console.ReadLine();1`
+                string input = Console.ReadLine();
                 char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch(ch)
                 {
@@ -95,6 +95,10 @@ namespace StackUsingsingelLink
                         }
                         s.pop();
                         break;
+                    case '3':
+                        s.display();
+                        break;
+
                 }
             }
         }
