@@ -25,7 +25,8 @@ namespace StackUsingsingelLink
             {
                 top = null;
             }
-            bool empty()
+
+           bool empty()
         {
             if (top == null)
                 return (true);
@@ -98,7 +99,11 @@ namespace StackUsingsingelLink
                     case '3':
                         s.display();
                         break;
-
+                    case '4':
+                        return;
+                      default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }
