@@ -63,14 +63,10 @@ namespace StackUsingsingelLink
                 }
             }
         }
-    }
-
-    class program
-        {
         static void Main(string[] args)
         {
             Stack s = new Stack();
-            while(true)
+            while (true)
             {
                 Console.WriteLine();
                 Console.WriteLine("***Stack Menu***\n");
@@ -81,7 +77,7 @@ namespace StackUsingsingelLink
                 Console.WriteLine("\nEnter your choice");
                 string input = Console.ReadLine();
                 char ch = Convert.ToChar(input == "" ? "0" : input);
-                switch(ch)
+                switch (ch)
                 {
                     case '1':
                         Console.WriteLine("\nEnter a number : ");
@@ -89,7 +85,7 @@ namespace StackUsingsingelLink
                         s.push(num);
                         break;
                     case '2':
-                        if(s.empty())
+                        if (s.empty())
                         {
                             Console.WriteLine("\nStack empty");
                             break;
@@ -101,7 +97,7 @@ namespace StackUsingsingelLink
                         break;
                     case '4':
                         return;
-                      default:
+                    default:
                         Console.WriteLine("\nInvalid Choice");
                         break;
                 }
@@ -109,3 +105,6 @@ namespace StackUsingsingelLink
         }
     }
 }
+
+
+       
